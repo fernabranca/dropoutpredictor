@@ -1,5 +1,7 @@
 import random
+from .base import Algorithm
 
+class RandomAlgorithm(Algorithm):
 
-def evaluate_sample():
-	return bool(random.getrandbits(1))
+	def evaluate(self, *args, **kwargs):
+		return random.getrandbits(1)
